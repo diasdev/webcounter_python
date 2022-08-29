@@ -1,0 +1,1 @@
+./bunnyshell dev --environment env-6ikrqz  --component  frontend  --docker demoapp --mount ./frontend:/var/www -vvv

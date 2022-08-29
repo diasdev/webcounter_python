@@ -1,0 +1,6 @@
+environment_name=$3
+component=$5
+
+echo "Starting development on Environment DemoApp on component frontend"
+
+telepresence intercept $component --port 8000:80 --namespace $environment_name --docker-run -- --rm  --mount type=bind,source="$(pwd)"/frontend,target=/var/www demoapp
